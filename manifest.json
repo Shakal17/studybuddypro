@@ -1,17 +1,18 @@
 {
-  "name": "CSE 2027 — Study Planner",
+  "name": "CSE 2027 – Study Planner",
   "short_name": "StudyApp",
   "description": "Offline-first UPSC/CSE Study Planner with analytics, streaks, habits and full offline support",
-  "start_url": "./studybuddypro/",
-  "scope": "studybuddypro",
+  "start_url": "/studybuddypro/",
+  "scope": "/studybuddypro/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#08090e",
   "theme_color": "#6366f1",
   "lang": "en",
   "categories": ["education", "productivity"],
+  "prefer_related_applications": false,
   "icons": [
-    { "src": "/studdybuddypro/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any maskable" },
+    { "src": "/studybuddypro/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any maskable" },
     { "src": "/studybuddypro/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any maskable" },
     { "src": "/studybuddypro/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any maskable" },
     { "src": "/studybuddypro/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any maskable" },
@@ -20,20 +21,25 @@
     { "src": "/studybuddypro/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any maskable" },
     { "src": "/studybuddypro/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ],
-  "screenshots": [],
-  "prefer_related_applications": false,
   "shortcuts": [
     {
       "name": "Start Session",
       "short_name": "Timer",
-      "url": "./index.html#sessions",
-      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
+      "url": "/studybuddypro/#sessions",
+      "icons": [{ "src": "/studybuddypro/icon-96.png", "sizes": "96x96" }]
     },
     {
       "name": "Today's Tasks",
       "short_name": "Tasks",
-      "url": "./index.html#today",
-      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
+      "url": "/studybuddypro/#tasks",
+      "icons": [{ "src": "/studybuddypro/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Analytics",
+      "short_name": "Charts",
+      "url": "/studybuddypro/#analytics",
+      "icons": [{ "src": "/studybuddypro/icon-96.png", "sizes": "96x96" }]
     }
-  ]
+  ],
+  "screenshots": []
 }
