@@ -2,8 +2,8 @@
 const CACHE_NAME = 'studyapp-v3';
 const STATIC_ASSETS = [
   './index.html', './manifest.json',
-  './icons/icon-192.png', './icons/icon-512.png',
-  './icons/icon-144.png', './icons/icon-96.png'
+  './icon-192.png', './icon-512.png',
+  './icon-144.png', './icon-96.png'
 ];
 
 /* ── INSTALL: cache all assets ── */
@@ -47,13 +47,13 @@ self.addEventListener('fetch', e => {
 
 /* ── PUSH NOTIFICATIONS ── */
 self.addEventListener('push', e => {
-  let data = { title: '📚 Study Reminder', body: "Time to study! Your goals are waiting.", icon: './icons/icon-192.png' };
+  let data = { title: '📚 Study Reminder', body: "Time to study! Your goals are waiting.", icon: './icon-192.png' };
   try { if (e.data) data = { ...data, ...e.data.json() }; } catch {}
   e.waitUntil(
     self.registration.showNotification(data.title, {
       body: data.body,
-      icon: data.icon || './icons/icon-192.png',
-      badge: './icons/icon-96.png',
+      icon: data.icon || './icon-192.png',
+      badge: './icon-96.png',
       tag: 'study-reminder',
       renotify: true,
       requireInteraction: false,
