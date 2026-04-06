@@ -27,13 +27,13 @@
       "name": "Start Session",
       "short_name": "Timer",
       "url": "./index.html#sessions",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
     },
     {
       "name": "Today's Tasks",
       "short_name": "Tasks",
       "url": "./index.html#today",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
     }
   ]
 }
